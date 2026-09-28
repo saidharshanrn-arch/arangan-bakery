@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARANGAN BAKERY | Freshly Baked Everyday</title>
+
+    <meta name="description"
+          content="ARANGAN BAKERY - Freshly baked treats, snacks, beverages and delicious bakery items.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="header">
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            <span>ARANGAN</span>
+            <small>BAKERY</small>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">FRESHLY BAKED EVERYDAY</p>
+
+        <h1>
+            Taste the joy<br>
+            in every bite.
+        </h1>
+
+        <p class="hero-text">
+            Fresh bakery treats, delicious snacks and refreshing
+            beverages made for every moment.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#menu" class="btn primary-btn">Explore Menu</a>
+            <a href="#contact" class="btn secondary-btn">Contact Us</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+
+    <div class="section-heading">
+        <p class="eyebrow">ABOUT US</p>
+        <h2>Made fresh. Served with care.</h2>
+    </div>
+
+    <div class="about-content">
+
+        <div class="about-text">
+            <p>
+                Welcome to ARANGAN BAKERY, a sample bakery website
+                created as a college project and business demonstration.
+            </p>
+
+            <p>
+                Our concept brings together freshly baked bakery items,
+                tasty snacks, refreshing drinks and popular chat items
+                in one welcoming place.
+            </p>
+
+            <p>
+                From a quick snack to a relaxing evening treat,
+                ARANGAN BAKERY is designed around simple food,
+                great presentation and a friendly experience.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <div class="about-icon">☕</div>
+            <h3>Fresh & Delicious</h3>
+            <p>
+                A simple place to enjoy bakery favourites,
+                snacks and refreshing beverages.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MENU -->
+<section class="section menu-section" id="menu">
+
+    <div class="section-heading">
+        <p class="eyebrow">OUR MENU</p>
+        <h2>Something delicious for everyone.</h2>
+        <p>Explore our selection of snacks and refreshments.</p>
+    </div>
+
+
+    <!-- CATEGORY BUTTONS -->
+    <div class="filter-buttons">
+
+        <button class="filter-btn active" data-category="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-category="snacks">
+            Snacks
+        </button>
+
+        <button class="filter-btn" data-category="noodles">
+            Noodles & Pasta
+        </button>
+
+        <button class="filter-btn" data-category="chat">
+            Chat Items
+        </button>
+
+        <button class="filter-btn" data-category="drinks">
+            Drinks
+        </button>
+
+    </div>
+
+
+    <!-- MENU GRID -->
+    <div class="menu-grid">
+
+        <article class="menu-card" data-category="snacks">
+            <div class="menu-icon">🥚</div>
+            <div>
+                <h3>Bread Omelette</h3>
+                <p>Fresh bread with a tasty omelette.</p>
+                <strong>₹50</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="noodles">
+            <div class="menu-icon">🍜</div>
+            <div>
+                <h3>Veg Maggi</h3>
+                <p>Hot and delicious vegetable noodles.</p>
+                <strong>₹50</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="noodles">
+            <div class="menu-icon">🍜</div>
+            <div>
+                <h3>Egg Maggi</h3>
+                <p>Classic Maggi with egg.</p>
+                <strong>₹60</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="noodles">
+            <div class="menu-icon">🍜</div>
+            <div>
+                <h3>Chicken Maggi</h3>
+                <p>Hot Maggi with chicken.</p>
+                <strong>₹80</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="noodles">
+            <div class="menu-icon">🍝</div>
+            <div>
+                <h3>Veg Pasta</h3>
+                <p>Creamy and delicious vegetable pasta.</p>
+                <strong>₹60</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="noodles">
+            <div class="menu-icon">🍝</div>
+            <div>
+                <h3>Egg Pasta</h3>
+                <p>Delicious pasta prepared with egg.</p>
+                <strong>₹70</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="noodles">
+            <div class="menu-icon">🍝</div>
+            <div>
+                <h3>Chicken Pasta</h3>
+                <p>Rich and tasty chicken pasta.</p>
+                <strong>₹90</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="chat">
+            <div class="menu-icon">🥣</div>
+            <div>
+                <h3>Bhel Puri</h3>
+                <p>Crunchy and flavourful street-style snack.</p>
+                <strong>₹40</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="chat">
+            <div class="menu-icon">🥣</div>
+            <div>
+                <h3>Pani Puri</h3>
+                <p>Crispy puris with refreshing filling.</p>
+                <strong>₹40</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="chat">
+            <div class="menu-icon">🥣</div>
+            <div>
+                <h3>Masala Puri</h3>
+                <p>Classic spicy and flavourful masala puri.</p>
+                <strong>₹40</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="chat">
+            <div class="menu-icon">🥣</div>
+            <div>
+                <h3>Sev Puri</h3>
+                <p>Crispy puri topped with sev and chutneys.</p>
+                <strong>₹45</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="chat">
+            <div class="menu-icon">🥣</div>
+            <div>
+                <h3>Dahi Puri</h3>
+                <p>Creamy and refreshing dahi puri.</p>
+                <strong>₹50</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="chat">
+            <div class="menu-icon">🥪</div>
+            <div>
+                <h3>Mayonnaise Puri</h3>
+                <p>A creamy twist on a classic snack.</p>
+                <strong>₹50</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="snacks">
+            <div class="menu-icon">🥪</div>
+            <div>
+                <h3>Bhujia Sandwich</h3>
+                <p>Crispy and tasty sandwich with bhujia.</p>
+                <strong>₹60</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="snacks">
+            <div class="menu-icon">🍽️</div>
+            <div>
+                <h3>Thattu Vadai Set</h3>
+                <p>A delicious traditional snack set.</p>
+                <strong>₹50</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="snacks">
+            <div class="menu-icon">🥚</div>
+            <div>
+                <h3>Egg Set</h3>
+                <p>A simple and satisfying egg snack.</p>
+                <strong>₹50</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="chat">
+            <div class="menu-icon">🥣</div>
+            <div>
+                <h3>Channa Masala Mix</h3>
+                <p>Spicy and flavourful channa snack.</p>
+                <strong>₹50</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="snacks">
+            <div class="menu-icon">🥖</div>
+            <div>
+                <h3>Bread Channa</h3>
+                <p>Soft bread served with tasty channa.</p>
+                <strong>₹50</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="snacks">
+            <div class="menu-icon">🥦</div>
+            <div>
+                <h3>Cauliflower</h3>
+                <p>Crispy and flavourful cauliflower snack.</p>
+                <strong>₹60</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="drinks">
+            <div class="menu-icon">🥤</div>
+            <div>
+                <h3>Chocolate Milkshake</h3>
+                <p>Rich and creamy chocolate milkshake.</p>
+                <strong>₹80</strong>
+            </div>
+        </article>
+
+
+        <article class="menu-card" data-category="snacks">
+            <div class="menu-icon">🧈</div>
+            <div>
+                <h3>Bun Butter</h3>
+                <p>Soft bun served with creamy butter.</p>
+                <strong>₹40</strong>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- OFFERS -->
+<section class="section offers" id="offers">
+
+    <div class="offer-box">
+
+        <p class="eyebrow">SPECIAL OFFERS</p>
+
+        <h2>Good food, good moments.</h2>
+
+        <p>
+            Discover delicious combinations and special treats
+            at ARANGAN BAKERY.
+        </p>
+
+        <a href="#menu" class="btn primary-btn">
+            Explore Menu
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="section gallery" id="gallery">
+
+    <div class="section-heading">
+        <p class="eyebrow">GALLERY</p>
+        <h2>A taste of ARANGAN.</h2>
+        <p>Add your bakery and food photos here.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item gallery-one">
+            <span>Bakery</span>
+        </div>
+
+        <div class="gallery-item gallery-two">
+            <span>Fresh Food</span>
+        </div>
+
+        <div class="gallery-item gallery-three">
+            <span>Snacks</span>
+        </div>
+
+        <div class="gallery-item gallery-four">
+            <span>Refreshments</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+
+    <div class="section-heading">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Visit ARANGAN BAKERY.</h2>
+        <p>
+            This is a sample college project.
+            Replace the details with actual business information when required.
+        </p>
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-info">
+
+            <div class="contact-card">
+                <span>📍</span>
+                <div>
+                    <h3>Location</h3>
+                    <p>Salem, Tamil Nadu</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <span>📞</span>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+91 90000 00000</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <span>🕒</span>
+                <div>
+                    <h3>Opening Hours</h3>
+                    <p>7:00 AM – 10:00 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+            >
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn primary-btn">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-logo">
+        ARANGAN BAKERY
+    </div>
+
+    <p>Freshly Baked Everyday</p>
+
+    <p class="copyright">
+        © 2026 ARANGAN BAKERY — College Project Demo
+    </p>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+<a
+    href="https://wa.me/919000000000?text=Hello%20Arangan%20Bakery%2C%20I%20would%20like%20to%20know%20more%20about%20your%20menu."
+    class="whatsapp"
+    target="_blank"
+    aria-label="Chat on WhatsApp"
+>
+    💬
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
