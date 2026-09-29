@@ -1,535 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1f1b18">
 
-    <title>ARANGAN BAKERY | Freshly Baked Everyday</title>
+  <title>Arangan Bakery | Fresh Bakes, Coffee &amp; Snacks in Salem</title>
+  <meta name="description" content="Arangan Bakery in Salem, Tamil Nadu. Freshly baked breads, pastries, filter coffee, masala chai, milkshakes and evening chaat. Visit us or order on WhatsApp.">
+  <meta property="og:title" content="Arangan Bakery | Freshly Baked Everyday">
+  <meta property="og:description" content="Fresh bakes, filter coffee and evening snacks in Salem, Tamil Nadu.">
+  <meta property="og:image" content="images/hero.webp">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/logo.png">
 
-    <meta name="description"
-          content="ARANGAN BAKERY - Freshly baked treats, snacks, beverages and delicious bakery items.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero.webp">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-<!-- NAVIGATION -->
-<header class="header">
-    <nav class="navbar">
+  <!-- ================= NAVIGATION ================= -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="Arangan Bakery home">
+        <span class="brand-name">Arangan</span>
+        <span class="brand-sub">Bakery &amp; Cafe</span>
+      </a>
 
-        <a href="#home" class="logo">
-            <span>ARANGAN</span>
-            <small>BAKERY</small>
-        </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
 
-        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-            ☰
-        </button>
-
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#offers">Offers</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#offers" class="nav-link">Offers</a></li>
+        <li><a href="#location" class="nav-link">Location</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-cta-item"><a href="#" class="btn btn-primary btn-sm" data-whatsapp="Hello Arangan Bakery, I would like to place an order.">Order on WhatsApp</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
+  <main id="main">
 
-<!-- HERO -->
-<section class="hero" id="home">
+    <!-- ================= 1. HOME / HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img src="images/hero.webp" alt="" class="hero-bg" fetchpriority="high">
+      <div class="hero-overlay"></div>
 
-    <div class="hero-content">
-
-        <p class="eyebrow">FRESHLY BAKED EVERYDAY</p>
-
-        <h1>
-            Taste the joy<br>
-            in every bite.
-        </h1>
-
+      <div class="container hero-content">
+        <p class="eyebrow eyebrow-light">Freshly baked everyday &middot; Salem</p>
+        <h1 id="hero-title">Warm bakes.<br><em>Honest coffee.</em></h1>
         <p class="hero-text">
-            Fresh bakery treats, delicious snacks and refreshing
-            beverages made for every moment.
+          From the first tray of buns at sunrise to evening chaat with friends,
+          Arangan Bakery is your neighbourhood spot for good food made fresh.
         </p>
-
         <div class="hero-buttons">
-            <a href="#menu" class="btn primary-btn">Explore Menu</a>
-            <a href="#contact" class="btn secondary-btn">Contact Us</a>
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#contact" class="btn btn-ghost">Contact Us</a>
         </div>
 
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-<section class="section about" id="about">
-
-    <div class="section-heading">
-        <p class="eyebrow">ABOUT US</p>
-        <h2>Made fresh. Served with care.</h2>
-    </div>
-
-    <div class="about-content">
-
-        <div class="about-text">
-            <p>
-                Welcome to ARANGAN BAKERY, a sample bakery website
-                created as a college project and business demonstration.
-            </p>
-
-            <p>
-                Our concept brings together freshly baked bakery items,
-                tasty snacks, refreshing drinks and popular chat items
-                in one welcoming place.
-            </p>
-
-            <p>
-                From a quick snack to a relaxing evening treat,
-                ARANGAN BAKERY is designed around simple food,
-                great presentation and a friendly experience.
-            </p>
-        </div>
-
-        <div class="about-card">
-            <div class="about-icon">☕</div>
-            <h3>Fresh & Delicious</h3>
-            <p>
-                A simple place to enjoy bakery favourites,
-                snacks and refreshing beverages.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- MENU -->
-<section class="section menu-section" id="menu">
-
-    <div class="section-heading">
-        <p class="eyebrow">OUR MENU</p>
-        <h2>Something delicious for everyone.</h2>
-        <p>Explore our selection of snacks and refreshments.</p>
-    </div>
-
-
-    <!-- CATEGORY BUTTONS -->
-    <div class="filter-buttons">
-
-        <button class="filter-btn active" data-category="all">
-            All
-        </button>
-
-        <button class="filter-btn" data-category="snacks">
-            Snacks
-        </button>
-
-        <button class="filter-btn" data-category="noodles">
-            Noodles & Pasta
-        </button>
-
-        <button class="filter-btn" data-category="chat">
-            Chat Items
-        </button>
-
-        <button class="filter-btn" data-category="drinks">
-            Drinks
-        </button>
-
-    </div>
-
-
-    <!-- MENU GRID -->
-    <div class="menu-grid">
-
-        <article class="menu-card" data-category="snacks">
-            <div class="menu-icon">🥚</div>
-            <div>
-                <h3>Bread Omelette</h3>
-                <p>Fresh bread with a tasty omelette.</p>
-                <strong>₹50</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="noodles">
-            <div class="menu-icon">🍜</div>
-            <div>
-                <h3>Veg Maggi</h3>
-                <p>Hot and delicious vegetable noodles.</p>
-                <strong>₹50</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="noodles">
-            <div class="menu-icon">🍜</div>
-            <div>
-                <h3>Egg Maggi</h3>
-                <p>Classic Maggi with egg.</p>
-                <strong>₹60</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="noodles">
-            <div class="menu-icon">🍜</div>
-            <div>
-                <h3>Chicken Maggi</h3>
-                <p>Hot Maggi with chicken.</p>
-                <strong>₹80</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="noodles">
-            <div class="menu-icon">🍝</div>
-            <div>
-                <h3>Veg Pasta</h3>
-                <p>Creamy and delicious vegetable pasta.</p>
-                <strong>₹60</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="noodles">
-            <div class="menu-icon">🍝</div>
-            <div>
-                <h3>Egg Pasta</h3>
-                <p>Delicious pasta prepared with egg.</p>
-                <strong>₹70</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="noodles">
-            <div class="menu-icon">🍝</div>
-            <div>
-                <h3>Chicken Pasta</h3>
-                <p>Rich and tasty chicken pasta.</p>
-                <strong>₹90</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="chat">
-            <div class="menu-icon">🥣</div>
-            <div>
-                <h3>Bhel Puri</h3>
-                <p>Crunchy and flavourful street-style snack.</p>
-                <strong>₹40</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="chat">
-            <div class="menu-icon">🥣</div>
-            <div>
-                <h3>Pani Puri</h3>
-                <p>Crispy puris with refreshing filling.</p>
-                <strong>₹40</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="chat">
-            <div class="menu-icon">🥣</div>
-            <div>
-                <h3>Masala Puri</h3>
-                <p>Classic spicy and flavourful masala puri.</p>
-                <strong>₹40</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="chat">
-            <div class="menu-icon">🥣</div>
-            <div>
-                <h3>Sev Puri</h3>
-                <p>Crispy puri topped with sev and chutneys.</p>
-                <strong>₹45</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="chat">
-            <div class="menu-icon">🥣</div>
-            <div>
-                <h3>Dahi Puri</h3>
-                <p>Creamy and refreshing dahi puri.</p>
-                <strong>₹50</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="chat">
-            <div class="menu-icon">🥪</div>
-            <div>
-                <h3>Mayonnaise Puri</h3>
-                <p>A creamy twist on a classic snack.</p>
-                <strong>₹50</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="snacks">
-            <div class="menu-icon">🥪</div>
-            <div>
-                <h3>Bhujia Sandwich</h3>
-                <p>Crispy and tasty sandwich with bhujia.</p>
-                <strong>₹60</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="snacks">
-            <div class="menu-icon">🍽️</div>
-            <div>
-                <h3>Thattu Vadai Set</h3>
-                <p>A delicious traditional snack set.</p>
-                <strong>₹50</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="snacks">
-            <div class="menu-icon">🥚</div>
-            <div>
-                <h3>Egg Set</h3>
-                <p>A simple and satisfying egg snack.</p>
-                <strong>₹50</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="chat">
-            <div class="menu-icon">🥣</div>
-            <div>
-                <h3>Channa Masala Mix</h3>
-                <p>Spicy and flavourful channa snack.</p>
-                <strong>₹50</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="snacks">
-            <div class="menu-icon">🥖</div>
-            <div>
-                <h3>Bread Channa</h3>
-                <p>Soft bread served with tasty channa.</p>
-                <strong>₹50</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="snacks">
-            <div class="menu-icon">🥦</div>
-            <div>
-                <h3>Cauliflower</h3>
-                <p>Crispy and flavourful cauliflower snack.</p>
-                <strong>₹60</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="drinks">
-            <div class="menu-icon">🥤</div>
-            <div>
-                <h3>Chocolate Milkshake</h3>
-                <p>Rich and creamy chocolate milkshake.</p>
-                <strong>₹80</strong>
-            </div>
-        </article>
-
-
-        <article class="menu-card" data-category="snacks">
-            <div class="menu-icon">🧈</div>
-            <div>
-                <h3>Bun Butter</h3>
-                <p>Soft bun served with creamy butter.</p>
-                <strong>₹40</strong>
-            </div>
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- OFFERS -->
-<section class="section offers" id="offers">
-
-    <div class="offer-box">
-
-        <p class="eyebrow">SPECIAL OFFERS</p>
-
-        <h2>Good food, good moments.</h2>
-
+        <ul class="hero-facts" aria-label="Quick facts">
+          <li><strong data-info="hoursShort"></strong><span>Open daily</span></li>
+          <li><strong>40+</strong><span>Items baked &amp; brewed</span></li>
+          <li><strong>100%</strong><span>Fresh every morning</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Intro strip -->
+    <section class="intro" aria-label="Introduction">
+      <div class="container intro-inner reveal">
         <p>
-            Discover delicious combinations and special treats
-            at ARANGAN BAKERY.
+          Breads, cakes and cookies baked in-house every morning. Filter coffee brewed the way
+          Salem likes it. Chaat, sandwiches and milkshakes for when the evening calls for something more.
         </p>
+      </div>
+    </section>
 
-        <a href="#menu" class="btn primary-btn">
-            Explore Menu
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- GALLERY -->
-<section class="section gallery" id="gallery">
-
-    <div class="section-heading">
-        <p class="eyebrow">GALLERY</p>
-        <h2>A taste of ARANGAN.</h2>
-        <p>Add your bakery and food photos here.</p>
-    </div>
-
-    <div class="gallery-grid">
-
-        <div class="gallery-item gallery-one">
-            <span>Bakery</span>
+    <!-- ================= 2. ABOUT ================= -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-images reveal">
+          <img src="images/about-baker.webp" alt="Baker shaping fresh dough by hand" class="about-img-main" loading="lazy" width="800" height="800">
+          <img src="images/pastry-display.jpg" alt="Display counter filled with fresh cookies and tarts" class="about-img-small" loading="lazy">
+          <div class="about-badge">
+            <img src="images/logo.png" alt="Arangan Bakery logo">
+          </div>
         </div>
 
-        <div class="gallery-item gallery-two">
-            <span>Fresh Food</span>
+        <div class="about-text reveal">
+          <p class="eyebrow">Our story</p>
+          <h2 id="about-title">A small bakery with a big heart.</h2>
+          <p>
+            Arangan Bakery started with a simple idea: the neighbourhood deserves bread that was
+            baked this morning, not last week. We knead, proof and bake in small batches so every
+            bun is soft, every cookie is crisp and every cake tastes like a celebration.
+          </p>
+          <p>
+            Today we are a cosy stop for families, students and office-goers alike &mdash; somewhere
+            to grab a quick chai, share a plate of pani puri, or pick up a cake for someone special.
+          </p>
+
+          <ul class="features">
+            <li class="feature">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2v4M4.9 4.9l2.8 2.8M2 12h4M19.1 4.9l-2.8 2.8M22 12h-4"/><circle cx="12" cy="14" r="5"/></svg>
+              </span>
+              <div>
+                <h3>Baked at sunrise</h3>
+                <p>Fresh trays every morning, no day-old shortcuts.</p>
+              </div>
+            </li>
+            <li class="feature">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M6 2v2M10 2v2M14 2v2"/></svg>
+              </span>
+              <div>
+                <h3>Real filter coffee</h3>
+                <p>Slow-dripped decoction, frothed the traditional way.</p>
+              </div>
+            </li>
+            <li class="feature">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></svg>
+              </span>
+              <div>
+                <h3>Made with care</h3>
+                <p>Quality ingredients and a clean, hygienic kitchen.</p>
+              </div>
+            </li>
+            <li class="feature">
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+              </span>
+              <div>
+                <h3>Friendly prices</h3>
+                <p>Everyday treats that everyone can enjoy.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. MENU ================= -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Our menu</p>
+          <h2 id="menu-title">Something delicious for every moment.</h2>
+          <p>Freshly prepared through the day. Tap a category to explore.</p>
         </div>
 
-        <div class="gallery-item gallery-three">
-            <span>Snacks</span>
+        <!-- Category buttons are created from MENU_CATEGORIES in script.js -->
+        <div class="filters" id="menuFilters" role="group" aria-label="Filter menu by category"></div>
+
+        <!-- Menu cards are created from MENU_ITEMS in script.js -->
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ================= 4. GALLERY ================= -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">A peek inside Arangan.</h2>
+          <p>Our counters, our kitchen and the people who make it special.</p>
         </div>
 
-        <div class="gallery-item gallery-four">
-            <span>Refreshments</span>
+        <div class="gallery-grid">
+          <figure class="gallery-item g-wide reveal">
+            <img src="images/interior.webp" alt="Cosy cafe seating with wooden tables and warm lights" loading="lazy">
+            <figcaption>Our cosy corner</figcaption>
+          </figure>
+          <figure class="gallery-item g-tall reveal">
+            <img src="images/cold-coffee.jpg" alt="Iced coffee topped with cream and chocolate drizzle" loading="lazy">
+            <figcaption>Cold coffee</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/pastry-display.jpg" alt="Fresh tarts and cookies on the display counter" loading="lazy">
+            <figcaption>Fresh from the oven</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/masala-chai.jpg" alt="Steaming masala chai with cardamom and cinnamon" loading="lazy">
+            <figcaption>Masala chai</figcaption>
+          </figure>
+          <figure class="gallery-item g-wide reveal">
+            <img src="images/customers.webp" alt="Friends laughing over tea and snacks at the cafe" loading="lazy">
+            <figcaption>Evenings with friends</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/cookie-counter.jpg" alt="Cakes, eclairs and pastries in a glass display" loading="lazy">
+            <figcaption>Cakes &amp; pastries</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/milkshakes.jpg" alt="Strawberry, vanilla and chocolate milkshakes with cream" loading="lazy">
+            <figcaption>Thick shakes</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. SPECIAL OFFERS ================= -->
+    <section class="section offers" id="offers" aria-labelledby="offers-title">
+      <div class="container">
+        <div class="section-heading section-heading-light reveal">
+          <p class="eyebrow eyebrow-light">Special offers</p>
+          <h2 id="offers-title">Treat yourself, for less.</h2>
+          <p>Current deals at the counter. Mention the offer when you order.</p>
         </div>
 
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-
-    <div class="section-heading">
-        <p class="eyebrow">CONTACT</p>
-        <h2>Visit ARANGAN BAKERY.</h2>
-        <p>
-            This is a sample college project.
-            Replace the details with actual business information when required.
-        </p>
-    </div>
-
-
-    <div class="contact-grid">
-
-        <div class="contact-info">
-
-            <div class="contact-card">
-                <span>📍</span>
-                <div>
-                    <h3>Location</h3>
-                    <p>Salem, Tamil Nadu</p>
-                </div>
+        <div class="offers-grid">
+          <article class="offer-card reveal">
+            <div class="offer-media">
+              <img src="images/bun-butter.webp" alt="Bun butter served with a cup of tea" loading="lazy">
+              <span class="offer-tag">7 AM &ndash; 10 AM</span>
             </div>
-
-            <div class="contact-card">
-                <span>📞</span>
-                <div>
-                    <h3>Phone</h3>
-                    <p>+91 90000 00000</p>
-                </div>
+            <div class="offer-body">
+              <h3>Morning Chai Combo</h3>
+              <p>Masala chai with a soft bun butter to start your day right.</p>
+              <div class="offer-price"><strong>&#8377;55</strong><s>&#8377;65</s></div>
+              <a href="#" class="btn btn-primary btn-block" data-whatsapp="Hi! I'd like to order the Morning Chai Combo (Rs.55).">Order Now</a>
             </div>
+          </article>
 
-            <div class="contact-card">
-                <span>🕒</span>
-                <div>
-                    <h3>Opening Hours</h3>
-                    <p>7:00 AM – 10:00 PM</p>
-                </div>
+          <article class="offer-card offer-featured reveal">
+            <div class="offer-media">
+              <img src="images/pani-puri.webp" alt="Plate of pani puri with tangy mint water" loading="lazy">
+              <span class="offer-tag">Most loved</span>
             </div>
+            <div class="offer-body">
+              <h3>Evening Chaat Duo</h3>
+              <p>Any two chaat plates plus a chilled fresh lime soda. Perfect for sharing.</p>
+              <div class="offer-price"><strong>&#8377;120</strong><s>&#8377;140</s></div>
+              <a href="#" class="btn btn-primary btn-block" data-whatsapp="Hi! I'd like to order the Evening Chaat Duo (Rs.120).">Order Now</a>
+            </div>
+          </article>
 
+          <article class="offer-card reveal">
+            <div class="offer-media">
+              <img src="images/celebration-cake.webp" alt="Chocolate caramel celebration cake on a stand" loading="lazy">
+              <span class="offer-tag">Pre-order</span>
+            </div>
+            <div class="offer-body">
+              <h3>Celebration Cakes</h3>
+              <p>Get 10% off any custom cake when you order 48 hours in advance.</p>
+              <div class="offer-price"><strong>10% off</strong></div>
+              <a href="#location" class="btn btn-outline-light btn-block">Visit Us</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. LOCATION ================= -->
+    <section class="section location" id="location" aria-labelledby="location-title">
+      <div class="container location-grid">
+        <div class="location-info reveal">
+          <p class="eyebrow">Find us</p>
+          <h2 id="location-title">Come say hello.</h2>
+          <p>We&apos;re easy to find and always happy to see you. Drop in for a quick chai or stay a while.</p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <h3>Address</h3>
+                <p data-info="address"></p>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </span>
+              <div>
+                <h3>Opening hours</h3>
+                <p data-info="hours"></p>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+              </span>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="#" data-phone-link data-info="phone"></a></p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="location-buttons">
+            <a href="#" class="btn btn-primary" data-phone-link>
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>
+              Call Now
+            </a>
+            <a href="#" class="btn btn-whatsapp" data-whatsapp="Hello Arangan Bakery! Could you share directions to the bakery?">
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              WhatsApp
+            </a>
+            <a href="#" class="btn btn-outline" id="directionsLink" target="_blank" rel="noopener">Get Directions</a>
+          </div>
         </div>
 
+        <div class="map-wrap reveal">
+          <iframe id="mapFrame" title="Map showing Arangan Bakery location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
 
-        <form class="contact-form" id="contactForm">
+    <!-- ================= 7. CONTACT ================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Questions, orders or cake requests?</h2>
+          <p>
+            Send us a message and we&apos;ll get back to you shortly. For the quickest reply,
+            chat with us directly on WhatsApp.
+          </p>
 
-            <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                required
-            >
+          <a href="#" class="btn btn-whatsapp" data-whatsapp="Hello Arangan Bakery! I have a question.">
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            Chat on WhatsApp
+          </a>
 
-            <input
-                type="tel"
-                id="phone"
-                placeholder="Phone Number"
-                required
-            >
+          <ul class="contact-links">
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </span>
+              <a href="#" id="emailLink" data-info="email"></a>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5"/></svg>
+              </span>
+              <a href="#" id="instagramLink" target="_blank" rel="noopener" data-info="instagramHandle"></a>
+            </li>
+          </ul>
+        </div>
 
-            <textarea
-                id="message"
-                rows="5"
-                placeholder="Your Message"
-                required
-            ></textarea>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Priya">
+            <p class="field-error" id="nameError" role="alert"></p>
+          </div>
 
-            <button type="submit" class="btn primary-btn">
-                Send Message
-            </button>
+          <div class="form-field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="10-digit mobile number">
+            <p class="field-error" id="phoneError" role="alert"></p>
+          </div>
 
-            <p id="formMessage"></p>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you'd like to order or ask"></textarea>
+            <p class="field-error" id="messageError" role="alert"></p>
+          </div>
 
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
         </form>
+      </div>
+    </section>
+  </main>
 
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="" class="footer-logo">
+        <div>
+          <p class="brand-name">Arangan Bakery</p>
+          <p class="footer-tag">Freshly baked everyday.</p>
+        </div>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <p data-info="address"></p>
+        <p data-info="hours"></p>
+      </div>
     </div>
+    <p class="copyright container">&copy; <span id="year"></span> Arangan Bakery. All rights reserved.</p>
+  </footer>
 
-</section>
+  <!-- Floating WhatsApp button -->
+  <a href="#" class="whatsapp-float" data-whatsapp="Hello Arangan Bakery! I would like to know more about your menu." aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+  </a>
 
-
-<!-- FOOTER -->
-<footer class="footer">
-
-    <div class="footer-logo">
-        ARANGAN BAKERY
-    </div>
-
-    <p>Freshly Baked Everyday</p>
-
-    <p class="copyright">
-        © 2026 ARANGAN BAKERY — College Project Demo
-    </p>
-
-</footer>
-
-
-<!-- WHATSAPP -->
-<a
-    href="https://wa.me/919000000000?text=Hello%20Arangan%20Bakery%2C%20I%20would%20like%20to%20know%20more%20about%20your%20menu."
-    class="whatsapp"
-    target="_blank"
-    aria-label="Chat on WhatsApp"
->
-    💬
-</a>
-
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
